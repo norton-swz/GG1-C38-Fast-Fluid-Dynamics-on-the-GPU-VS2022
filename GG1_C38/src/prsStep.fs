@@ -1,0 +1,37 @@
+/**
+ * @file prsStep.fs
+ * @author Eron Ristich (eron@ristich.com)
+ * @brief Pressure step
+ * @version 0.1
+ * @date 2022-09-05
+ */
+#version 430 core
+
+out vec4 fragColor;
+
+in vec2 uv;
+
+uniform int frame;
+uniform float dt;
+uniform vec2 res; // window resolution
+uniform vec2 mpos; // current mouse position
+uniform vec2 rel; // relative mouse movement (in pixels)
+uniform int mDown; // if 0 mouse is up, else, mouse is down
+
+uniform sampler2D velTex; // velocity texture
+uniform sampler2D tmpTex; // temporary texture
+uniform sampler2D prsTex; // pressure texture
+uniform sampler2D qntTex; // quantity texture
+
+float delx = 1 / res.x;
+float dely = 1 / res.y;
+
+#include math/constants.fs
+#include math/math.fs
+
+void main() {
+    // has to be iterated ~40 times on the cpu (texture has to be updated (ping ponged) each time)
+    float alpha = -(delx*delx);
+    float rbeta = 0.25;
+    jacobi(uv, fragColor, alpha, rbeta, prsTex, tmpTex);
+}

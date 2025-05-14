@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{308fa6f0-d232-4ee3-8900-463aa9ef3f25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\kernel">
+      <UniqueIdentifier>{19f0a891-3415-4c07-9fa8-fd2d5de0e3b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="objects">
+      <UniqueIdentifier>{d9d651fc-1064-49a0-9f96-48ca40b38e61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GG1_C38">
+      <UniqueIdentifier>{74ab4956-f2ed-4fc4-8fe0-b1c1ccc2f1b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GG1_C38\compiled">
+      <UniqueIdentifier>{8ccadbbc-086f-4812-9045-8923d0e5fdc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GG1_C38\src">
+      <UniqueIdentifier>{89f54da5-6f10-4eac-846f-71dfb8b87f3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GG1_C38\src\math">
+      <UniqueIdentifier>{b0a7eb5c-8ced-435e-a1f5-bacdd8c03695}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GG1_C38_handler.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="util\kernel\kernel.cpp">
+      <Filter>util\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="util\handler.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GG1_C38_handler.h" />
+    <ClInclude Include="util\kernel\kernel.h">
+      <Filter>util\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="util\glslInclude.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\handler.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="objects\camera.h">
+      <Filter>objects</Filter>
+    </ClInclude>
+    <ClInclude Include="objects\helper.h">
+      <Filter>objects</Filter>
+    </ClInclude>
+    <ClInclude Include="objects\OBJ_Loader.h">
+      <Filter>objects</Filter>
+    </ClInclude>
+    <ClInclude Include="objects\skybox.h">
+      <Filter>objects</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GG1_C38\compiled\advStep.fs">
+      <Filter>GG1_C38\compiled</Filter>
+    </None>
+    <None Include="GG1_C38\compiled\difStep.fs">
+      <Filter>GG1_C38\compiled</Filter>
+    </None>
+    <None Include="GG1_C38\compiled\divStep.fs">
+      <Filter>GG1_C38\compiled</Filter>
+    </None>
+    <None Include="GG1_C38\compiled\fluid.fs">
+      <Filter>GG1_C38\compiled</Filter>
+    </None>
+    <None Include="GG1_C38\compiled\fluid.vs">
+      <Filter>GG1_C38\compiled</Filter>
+    </None>
+    <None Include="GG1_C38\compiled\frcStep.fs">
+      <Filter>GG1_C38\compiled</Filter>
+    </None>
+    <None Include="GG1_C38\compiled\grdStep.fs">
+      <Filter>GG1_C38\compiled</Filter>
+    </None>
+    <None Include="GG1_C38\compiled\prsStep.fs">
+      <Filter>GG1_C38\compiled</Filter>
+    </None>
+    <None Include="GG1_C38\src\advStep.fs">
+      <Filter>GG1_C38\src</Filter>
+    </None>
+    <None Include="GG1_C38\src\difStep.fs">
+      <Filter>GG1_C38\src</Filter>
+    </None>
+    <None Include="GG1_C38\src\divStep.fs">
+      <Filter>GG1_C38\src</Filter>
+    </None>
+    <None Include="GG1_C38\src\fluid.fs">
+      <Filter>GG1_C38\src</Filter>
+    </None>
+    <None Include="GG1_C38\src\fluid.vs">
+      <Filter>GG1_C38\src</Filter>
+    </None>
+    <None Include="GG1_C38\src\frcStep.fs">
+      <Filter>GG1_C38\src</Filter>
+    </None>
+    <None Include="GG1_C38\src\grdStep.fs">
+      <Filter>GG1_C38\src</Filter>
+    </None>
+    <None Include="GG1_C38\src\prsStep.fs">
+      <Filter>GG1_C38\src</Filter>
+    </None>
+    <None Include="GG1_C38\src\math\advection.fs">
+      <Filter>GG1_C38\src\math</Filter>
+    </None>
+    <None Include="GG1_C38\src\math\constants.fs">
+      <Filter>GG1_C38\src\math</Filter>
+    </None>
+    <None Include="GG1_C38\src\math\diffusion.fs">
+      <Filter>GG1_C38\src\math</Filter>
+    </None>
+    <None Include="GG1_C38\src\math\force.fs">
+      <Filter>GG1_C38\src\math</Filter>
+    </None>
+    <None Include="GG1_C38\src\math\math.fs">
+      <Filter>GG1_C38\src\math</Filter>
+    </None>
+    <None Include="GG1_C38\src\math\projection.fs">
+      <Filter>GG1_C38\src\math</Filter>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

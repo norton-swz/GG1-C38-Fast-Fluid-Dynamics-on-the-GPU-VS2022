@@ -1,0 +1,10 @@
+﻿  GG1_C38_handler.cpp
+E:\source\c++\GG1_C38_Fast_Fluid_Dynamics_on_the_GPU\objects\helper.h(16,1): warning C4005: “GLEW_STATIC”: 宏重定义
+  (编译源文件“GG1_C38_handler.cpp”)
+      E:\source\c++\GG1_C38_Fast_Fluid_Dynamics_on_the_GPU\objects\helper.h(16,1):
+      之前在命令行上声明的“GLEW_STATIC”
+  
+E:\source\c++\GG1_C38_Fast_Fluid_Dynamics_on_the_GPU\objects\helper.h(307,54): warning C4267: “参数”: 从“size_t”转换到“GLsizei”，可能丢失数据
+  (编译源文件“GG1_C38_handler.cpp”)
+  
+  GG1_C38_Fast_Fluid_Dynamics_on_the_GPU.vcxproj -> E:\source\c++\GG1_C38_Fast_Fluid_Dynamics_on_the_GPU\x64\Debug\GG1_C38_Fast_Fluid_Dynamics_on_the_GPU.exe
