@@ -275,7 +275,7 @@ void Kernel::start() {
     SDL_Log("Render loop started");
     running = true;
     
-    preLoopStep();
+    preLoopStep(); // ±‡“Îshader£¨¥¥Ω®shader program°£
     while (running) {
         // handle events
         eventHandler();

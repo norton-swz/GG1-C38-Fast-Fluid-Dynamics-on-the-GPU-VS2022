@@ -67,6 +67,7 @@ void divergence(vec2 coords, out vec4 div, sampler2D x) {
     vec4 xT = texture(x, coords + vec2(0, dely));
 
     div = vec4((res.x / res.y) * 0.5 * ((xR.x - xL.x) + (xT.y - xB.y)));
+    // div = vec4(0.5 * (res.x * (xR.x - xL.x) + res.y * (xT.y - xB.y))); // 这样也没问题
 }
 
 // Gradient

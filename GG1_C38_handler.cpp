@@ -90,9 +90,9 @@ void GG1_C38_Handler::objEventHandler() {
                 break;
             
             case SDL_MOUSEMOTION:
-                relX = m_event.motion.xrel;
+                relX = m_event.motion.xrel; // 相对位移
                 relY = m_event.motion.yrel;
-                orgX = m_event.motion.x - relX;
+                orgX = m_event.motion.x - relX; // 鼠标移动之前的坐标
                 orgY = m_event.motion.y - relY; 
                 break;
             
@@ -153,6 +153,7 @@ void GG1_C38_Handler::advectionStep() {
 
     glBindFramebuffer(GL_FRAMEBUFFER, 0);
 
+    // 交换指针(ping-pong buffering)
     TexturePair* temp = nxtQnt;
     nxtQnt = curQnt;
     curQnt = temp;
